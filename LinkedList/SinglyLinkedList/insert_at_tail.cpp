@@ -7,7 +7,7 @@
     node* next;
  };
  
-void insertAtHead(node* &head, int d) {
+void insertAtTail(node* &head, int d) {
     node* temp = new node;
     temp -> data = d;
     temp -> next = NULL;
@@ -35,9 +35,9 @@ void printList(node* &head) {
  int main()
  {
     node* head = NULL; 
-    insertAtHead(head, 10);
-    insertAtHead(head, 20);
-    insertAtHead(head, 30);
+    insertAtTail(head, 10);
+    insertAtTail(head, 20);
+    insertAtTail(head, 30);
     printList(head);
     return 0;
  }
